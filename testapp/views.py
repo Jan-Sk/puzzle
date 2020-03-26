@@ -7,3 +7,5 @@ def home(request):
 def upload(request):
 	return render(request, 'testapp/upload.html')
 
+def debil(request):
+	return render(request, 'testapp/debil.html')
