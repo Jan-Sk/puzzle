@@ -9,4 +9,4 @@ tasks:
 
 Bartek
 tasks:
-    Ogarnac srodowisko developerskie
+    Ogarnac srodowisko developerskie - done
