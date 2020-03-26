@@ -1,0 +1,12 @@
+Jan
+tasks:
+    Login
+    Spermogacie na nowe
+Mieszko
+tasks:
+    Upload File
+    Bash with libs
+
+Bartek
+tasks:
+    Ogarnac srodowisko developerskie
