@@ -7,7 +7,7 @@ urlpatterns = [
 path('', views.home, name='testapp-home'),
 path('upload/', views.upload, name='testapp-upload'),
 path('debil/', views.debil, name='testapp-debil'),
-path('register/', views.upload, name='testapp-register'),
-path('login/', views.upload, name='testapp-login'),
+path('register/', views.register, name='testapp-register'),
+path('login/', views.login, name='testapp-login'),
 
 ]
