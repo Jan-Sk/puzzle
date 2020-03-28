@@ -28,5 +28,5 @@ def login(request):
 def upload(request):
 	return render(request, 'testapp/upload.html')
 
-def debil(request):
-	return render(request, 'testapp/debil.html')
+def tasks(request):
+	return render(request, 'testapp/tasks.html')
