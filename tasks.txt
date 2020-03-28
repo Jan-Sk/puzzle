@@ -1,11 +1,11 @@
 Jan
 tasks:
-    Login
-    Spermogacie na nowe
+    Login -> działa razem z rejestracją i miejscami gdzie mogą wejść tylko osoby które mają konto
+    Spermogacie na nowe _> potem
 
 Mieszko
 tasks:
-    Upload File
+    Upload File (should print photo on webpage)
     Bash with libs
 
 Bartek

@@ -28,11 +28,16 @@
               <a class="nav-item nav-link" href="{% url 'testapp-home' %}">Home</a>
               <a class="nav-item nav-link" href="{% url 'testapp-upload' %}">Upload</a>
               <a class="nav-item nav-link" href="{% url 'testapp-tasks' %}">Tasks</a>
+              <a class="nav-item nav-link" href="{% url 'testapp-testarea' %}">Testarea</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              <a class="nav-item nav-link" href="{% url 'testapp-login' %}">Login</a>
-              <a class="nav-item nav-link" href="{% url 'testapp-register' %}">Register</a>
+              {% if 'username' in request.session %}
+                <a class="nav-item nav-link" href="{% url 'testapp-logout' %}">Logout</a>
+              {% else %}
+                <a class="nav-item nav-link" href="{% url 'testapp-login' %}">Login</a>
+                <a class="nav-item nav-link" href="{% url 'testapp-register' %}">Register</a>
+              {% endif %}
             </div>
           </div>
         </div>
