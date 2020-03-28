@@ -1,13 +1,41 @@
-{% extends 'testapp/base.html' %}
-
-{% load static %}
-
+{% extends "testapp/base.html" %}
 {% block content %}
 
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <input type="file" name="myfile">
-    <button type="submit">Upload</button>
-  </form>
+    <div class="content-section">
+    
+        <form method="POST" id="add_form" action="{% url 'testapp-login' %}">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Login</legend>
+                <div>
+                  Login
+                </div>
+                <div class="input">
+                  <input type="text" name="username" required="required">
+                </div>
+                <div>
+                  Pass
+                </div>
+                <div class="input">
+                  <input type="password" name="password" required="required">
+                </div>
 
-{% endblock %}
+            </fieldset>
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-info">Login</button>
+            </div>
+        </form>
+
+
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Need an account? <a class="ml-2" href="{% url 'testapp-register' %}">Sign Up Now</a>
+            </small>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+
+</script>
+{% endblock content %}
