@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'puzzle.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': '00261272_puzzle',
+        'USER': '00261272_puzzle',
+        'PASSWORD': 'lipol1234!',
+        'HOST': 'hosting1948878.online.pro',
+        'PORT': '3306',
     }
 }
 
