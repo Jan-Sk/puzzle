@@ -58,9 +58,6 @@ def logout(request):
 def upload(request):
 	return render(request, 'testapp/upload.html')
 
-def tasks(request):
-	return render(request, 'testapp/tasks.html')
-
 def testarea(request):
 	if request.session.has_key('username'):
 		messages.success(request, 'welcome in restricted area!')
